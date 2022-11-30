@@ -15,7 +15,7 @@ export class AdminLoginComponent {
     let data={"usename":this.usename,"password":this.password}
     console.log(data)
     if (this.usename=="admin" && this.password=="nestdigital") {
-      alert("success")
+      this.rout.navigate(['/view_course'])
       this.password=""
       this.usename=""
     } else {
