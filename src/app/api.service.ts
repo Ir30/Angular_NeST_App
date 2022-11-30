@@ -19,4 +19,8 @@ export class ApiService {
   addCourse =(data:any)=>{
     return this.http.post("https://mylinkurcodesapp.herokuapp.com/getcourses",data)
   }
+
+  addFriend =(data:any)=>{
+    return this.http.post("https://dummyapifriends.herokuapp.com/view",data)
+  }
 }

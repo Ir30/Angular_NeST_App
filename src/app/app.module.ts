@@ -15,7 +15,8 @@ import { ViewFriendsComponent } from './view-friends/view-friends.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AddCourseComponent } from './add-course/add-course.component';
-import { NavUserComponent } from './nav-user/nav-user.component'
+import { NavUserComponent } from './nav-user/nav-user.component';
+import { AddFriendsComponent } from './add-friends/add-friends.component'
 
 const myRouter:Routes=[
   {
@@ -45,6 +46,10 @@ const myRouter:Routes=[
   {
     path:"add_course",
     component:AddCourseComponent
+  },
+  {
+    path:"add_friends",
+    component:AddFriendsComponent
   }
 ]
 @NgModule({
@@ -59,7 +64,8 @@ const myRouter:Routes=[
     UserLoginComponent,
     AddEmployeeComponent,
     AddCourseComponent,
-    NavUserComponent
+    NavUserComponent,
+    AddFriendsComponent
   ],
   imports: [
     BrowserModule,
