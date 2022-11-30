@@ -33,7 +33,8 @@ const myRouter:Routes=[
     component:ViewFriendsComponent
   },
   {
-    path:"add_emp"
+    path:"add_emp",
+    component:AddEmpComponent
   }
 ]
 @NgModule({
