@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-employee',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-employee.component.css']
 })
 export class AddEmployeeComponent {
+
+  constructor(private route:Router){}
+
   EmpId=""
   FirstName=""
   HouseNO=""
@@ -59,6 +63,10 @@ export class AddEmployeeComponent {
       alert("password and conform password dosent match")
 
     }
+  }
+
+  navToEmpRegister=()=>{
+    this.route.navigate(['/add_employee'])
   }
 
 
