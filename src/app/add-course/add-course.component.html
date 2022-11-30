@@ -1,0 +1,44 @@
+<app-nav-user></app-nav-user>
+
+<div class="container">
+    <div class="row">
+        <div class="div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 m-5 ">
+            <div class="row">
+
+                <div style="border-radius:15px ;" class="div col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-5  p-5 pt-3 px-5 mb-5 bg-light ">
+                    <h1 class="text-secondary m-3">Add Course</h1>
+                    <hr class="m-3">
+
+                    
+                        <div class="form-group mt-5 m-3">
+                          <label for="exampleInputEmail1">Course Title</label>
+                          <input name="courseTitle" [(ngModel)]="courseTitle" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                        </div>
+                        <div class="form-group  m-3">
+                            <label for="exampleInputEmail1">Description</label>
+                            <input name="courseDescription" [(ngModel)]="courseDescription" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                        </div>
+                        <div class="form-group m-3">
+                          <label for="exampleInputPassword1">Duration</label>
+                          <textarea name="courseDuration" [(ngModel)]="courseDuration" id="" cols="30" rows="4" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group  m-3">
+                            <label for="exampleInputEmail1">Date</label>
+                            <input name="courseDate" [(ngModel)]="courseDate" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group  m-3">
+                            <label for="exampleInputEmail1">Venue</label>
+                            <input name="courseVenue" [(ngModel)]="courseVenue" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        
+                        <button (click)="readValues()" type="submit" class="btn btn-primary m-3">Submit</button>
+                      
+                      <br>
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
