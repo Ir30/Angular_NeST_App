@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-login',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-login.component.css']
 })
 export class UserLoginComponent {
+  constructor(private route:Router){}
   empId=""
   password=""
 
@@ -17,6 +19,8 @@ export class UserLoginComponent {
     console.log(data)
     if (this.empId=="1122" && this.password=="12345") {
       alert("succes")
+      this.route.navigate(['/add_course'])
+
     } else {
       alert("Invalid credntials")
     }

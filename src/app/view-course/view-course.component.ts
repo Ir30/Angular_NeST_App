@@ -8,12 +8,7 @@ import { ApiService } from '../api.service';
 })
 export class ViewCourseComponent {
 
-  courseTitle=""
-  courseDescription=""
-  courseDuration=""
-  courseDate=""
-  courseVenue=""
-
+  
   constructor(private api:ApiService){
     api.fetchcourse().subscribe(
   

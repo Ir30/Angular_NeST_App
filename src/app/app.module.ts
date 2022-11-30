@@ -13,7 +13,9 @@ import { NavAdminComponent } from './nav-admin/nav-admin.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewFriendsComponent } from './view-friends/view-friends.component';
 import { UserLoginComponent } from './user-login/user-login.component';
-import { AddEmployeeComponent } from './add-employee/add-employee.component'
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { AddCourseComponent } from './add-course/add-course.component';
+import { NavUserComponent } from './nav-user/nav-user.component'
 
 const myRouter:Routes=[
   {
@@ -39,6 +41,10 @@ const myRouter:Routes=[
   {
     path:"add_employee",
     component:AddEmployeeComponent
+  },
+  {
+    path:"add_course",
+    component:AddCourseComponent
   }
 ]
 @NgModule({
@@ -51,7 +57,9 @@ const myRouter:Routes=[
     NavAdminComponent,
     ViewFriendsComponent,
     UserLoginComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    AddCourseComponent,
+    NavUserComponent
   ],
   imports: [
     BrowserModule,
