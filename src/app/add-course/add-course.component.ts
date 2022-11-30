@@ -28,7 +28,7 @@ export class AddCourseComponent {
     this.api.addCourse(data).subscribe(
       (response:any)=>{
         console.log(response)
-        if (response=="success") {
+        if (response.status=="success") {
           alert("added succesfully")
         } else {
           alert("something went wrong!!!")
