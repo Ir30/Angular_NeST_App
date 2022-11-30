@@ -89,9 +89,9 @@
                 <input name="confPassword"[(ngModel)]="confPassword" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 gx-5 gy-3">
-                <button class="btn btn-success">Register</button>
+                <button (click)="readValues()" class="btn btn-success">Register</button>
                 <br>
-                <a (click)="navToEmpRegister()">Back to Employee Login</a>
+                <a routerLink="/user_login">Back to User Login</a>
             </div>
             
             

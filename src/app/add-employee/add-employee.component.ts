@@ -65,9 +65,6 @@ export class AddEmployeeComponent {
     }
   }
 
-  navToEmpRegister=()=>{
-    this.route.navigate(['/add_employee'])
-  }
 
 
 }
