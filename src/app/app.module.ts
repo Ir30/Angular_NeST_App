@@ -11,7 +11,9 @@ import { FormsModule } from '@angular/forms';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { NavAdminComponent } from './nav-admin/nav-admin.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ViewFriendsComponent } from './view-friends/view-friends.component'
+import { ViewFriendsComponent } from './view-friends/view-friends.component';
+import { AddEmpComponent } from './add-emp/add-emp.component';
+import { NavEmpComponent } from './nav-emp/nav-emp.component'
 
 const myRouter:Routes=[
   {
@@ -29,6 +31,9 @@ const myRouter:Routes=[
   {
     path:"view_friends",
     component:ViewFriendsComponent
+  },
+  {
+    path:"add_emp"
   }
 ]
 @NgModule({
@@ -39,7 +44,9 @@ const myRouter:Routes=[
     AdminLoginComponent,
     ViewCourseComponent,
     NavAdminComponent,
-    ViewFriendsComponent
+    ViewFriendsComponent,
+    AddEmpComponent,
+    NavEmpComponent
   ],
   imports: [
     BrowserModule,
