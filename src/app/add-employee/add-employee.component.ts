@@ -53,8 +53,11 @@ export class AddEmployeeComponent {
 
     }
     console.log(data)
-    if (this.password != this.confPassword) {
+    if (this.password == this.confPassword) {
+      alert("registerd succesfully")
+    }else{
       alert("password and conform password dosent match")
+
     }
   }
 
